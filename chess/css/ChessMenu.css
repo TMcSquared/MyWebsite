@@ -1,0 +1,49 @@
+.Menu {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background: linear-gradient(#333333FF,#FFFFFF00);
+	border-radius: 8px;
+}
+.Menu:hover{
+	background: linear-gradient(#777777ff,#dddddd00);
+}
+.Menu > li {
+	float: left;
+}
+li a, .DrpBtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+li a:hover, .DropDown:hover .DrpBtn {
+	border-radius: 8px;
+	background: linear-gradient(#333333ff,#FFFFFF00);
+	color: white;
+}
+li.DropDown {
+	display: inline-block;
+}
+.Content{
+	display: none;
+	position: absolute;
+	background: linear-gradient(#333333ff,#FFFFFF00);
+	min-width: 160px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.5);
+	border-radius: 8px;
+}
+.Content a{
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.Content a:hover{
+	background: linear-gradient(#777777ff,#FFFFFF00);
+}
+.DropDown:hover .Content{
+	display: block;
+}

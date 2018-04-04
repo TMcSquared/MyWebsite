@@ -1,0 +1,20 @@
+.Tournaments div{
+	border: none;
+	padding: none;
+	margin: none;
+}
+
+#Tlink{
+  color: black;
+  border: solid black 1px;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: cursive;
+  background: linear-gradient(#7777ff88,#3333ff88);
+}
+#Tlink:hover{
+  background: linear-gradient(#7777ffff,#3333ffff);
+}
+#list{
+  display: auto;
+}

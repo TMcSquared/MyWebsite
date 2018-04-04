@@ -1,0 +1,83 @@
+/* Basic Setup */
+body{
+	font-family: cursive;
+	background-image: url("background.jpg");
+	background-size: cover;
+}
+p {
+	margin: 20px;
+}
+h3{
+	border-bottom: solid black 1px;
+	margin: 10px;
+}
+h1{
+	border-bottom: solid black 1px;
+	margin: 20px;
+	margin-bottom: 0px;
+}
+/* CSS Grid setup */
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-areas:
+	". main .";
+	grid-gap: 10px;
+}
+
+.mainGrid{
+	grid-area: main;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+	" Tournaments "
+	" FeaturedGame "
+	" Openings ";
+	grid-gap: 0px;
+	background-color: #ffffff55;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: #000000ff;
+}
+.mainGrid div{
+	border: solid black 1px;
+	border-radius: 8px;
+	margin: 10px;
+	padding: 10px;
+}
+.FeaturedGame{
+	background-color: #ffffff88;
+	grid-area: FeaturedGame;
+}
+.FeaturedGame div{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+.FeaturedGame header{
+	font-size: 30px;
+}
+.Tournaments{
+	background-color: #ffffff88;
+	grid-area: Tournaments;
+}
+.Openings{
+	background-color: #ffffff88;
+	grid-area: Openings;
+	margin-bottom: 5px;
+}
+.Openings div{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+.OpeningDesc{
+	padding-top: 5px;
+}
+.chessboard div{
+	border-radius: 0px;
+}
+.Tournaments header{
+	font-size: 30px;
+}

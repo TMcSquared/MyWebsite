@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Chess Page</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/chess.css"/>
+    <link rel="stylesheet" href="css/ChessMenu.css"/>
+    <link rel="stylesheet" href="css/Links.css"/>
+    <link rel="stylesheet" href="canvaschess/pgn.min.css"/>
+    <link rel="stylesheet" href="css/chessboard-0.3.0.min.css"/>
+    <link rel="stylesheet" href="css/chessboard-0.3.0.css"/>
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="canvaschess/canvaschess-0.1.0.min.js"></script>
+    <script src="canvaschess/pgnviewer-0.1.0.min.js"></script>
+    <script src="js/chessboard-0.3.0.min.js" charset="utf-8"></script>
+    <script src="js/chessboard-0.3.0.js" charset="utf-8"></script>
+  </header>
+  <body>
+    <ul class="Menu">
+   		<li class="DropDown"><a href="#" class="DrpBtn">Main</a>
+        <div class="Content">
+          <a href="../index.html">Home</a>
+          <a href="chess.html">Main Chess Page</a>
+        </div>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="Tournaments.html">Tournaments</a></li>
+        <li> <a href="Openings.html">Openings</a></li>
+      </li>
+   	</ul>
+    <div class="wrapper">
+      <div class="mainGrid">
+        <div class="FeaturedGame">
+          <header>
+            Featured Game
+          </header>
+          <script>
+            var viewer = new CHESS.PgnViewer({
+              width: '500px',
+              pgn_uri: 'tournaments/Lightning_Bullet_Chess.pgn',
+            });
+          </script>
+        </div>
+        <div class="Openings">
+          <div class="OpeningHeader" style="font-size: 30px">
+            Featured Opening
+          </div>
+          <div class="chessboard" id="board" style="width: 400px"></div>
+          <script>
+            var ruyLopez = 'rnbqk2r/ppp1bppp/4pn2/3p4/3P1B2/4PN2/PPP2PPP/RN1QKB1R';
+            var board = ChessBoard('board', ruyLopez);
+          </script>
+          <div class="OpeningDesc">Queen's Pawn: Mason variation</div>
+        </div>
+        <div class="Tournaments">
+          <header>
+            Tournament Results:
+          </header>
+          <div class="TournamentLinks">
+            <li id="list">
+              <a id="Tlink" href="tournaments/Lightning_Bullet_Chess.html">Lightning_Bullet_Chess</a>
+            </li>
+            <li id="list">
+              <a id="Tlink" href="tournaments/Bullet_Chess.html">Bullet_Chess</a>
+            </li>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

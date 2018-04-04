@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+    <script type="text/javascript" src="libraries/p5.js"></script>
+		<script type="text/javascript" src="libraries/p5.dom.js"></script>
+    <script type="text/javascript" src="libraries/p5.sound.js"></script>
+    <script type="text/javascript" src="sound.js"></script>
+    <script language="javascript" type="text/javascript" src="js/A_StarPathfinding.js"></script>
+    <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+    <!-- This line removes any default padding and style.
+         You might only need one of these values set. -->
+    <link rel="stylesheet" href="css/Astar.css"/>
+  </head>
+  <body id="body">
+    <ul class="Menu">
+   		<li><a href="index.html">Home</a></li>
+   		<li class="DropDown"><a href="#" class="DrpBtn">Processing Projects</a>
+   		  <div class="Content">
+   				<a href="AStar.html">A* PathFinding</a>
+          <a href="Physics.html">Physics with Matter.js</a>
+   			</div>
+   		</li>
+      <li class="DropDown"><a href="#" class="DrpBtn">3D Projects</a>
+   		  <div class="Content">
+   				<a href="#">Non-realistic</a>
+          <a href="photo-realistic.html">Photo-realistic</a>
+   			</div>
+   		</li>
+   	</ul>
+      <div class="grid">
+        <div class="wrapper">
+          <div id="canvas"></div>
+          <p id="pathlength">Path length: 0</p>
+          <p id="iterations">Iterations: 0</p>
+          <p id="path" >Path:</p>
+          <p id="Solution"></p>
+        </div>
+      </div>
+  </body>
+</html>
